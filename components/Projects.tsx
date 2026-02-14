@@ -42,6 +42,20 @@ const projects = [
 ];
 
 export const Projects = () => {
+    const handleLiveDemoClick = (event: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+        const current = window.location.href.split("#")[0];
+        const normalizedCurrent = current.endsWith("/") ? current : `${current}/`;
+        const normalizedLink = link.endsWith("/") ? link : `${link}/`;
+
+        if (normalizedCurrent === normalizedLink) {
+            event.preventDefault();
+            window.location.reload();
+            return;
+        }
+
+        window.location.assign(link);
+    };
+
     return (
         <section id="projects" className="py-20 px-6 max-w-7xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-12 text-center text-glow">
@@ -94,8 +108,7 @@ export const Projects = () => {
                             {project.liveLink && (
                                 <a
                                     href={project.liveLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    onClick={(event) => handleLiveDemoClick(event, project.liveLink)}
                                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-neon/20 border border-neon text-neon text-sm font-bold font-orbitron rounded hover:bg-neon hover:text-black transition-all"
                                 >
                                     Live Demo <MoveUpRight size={14} />
