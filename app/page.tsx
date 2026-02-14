@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
+import { BackToTop } from "../components/BackToTop";
 import { Spotlight } from "../components/ui/Spotlight";
 import { Projects } from "../components/Projects";
 import { TechStack } from "../components/TechStack";
@@ -26,24 +27,23 @@ export default function Home() {
 
           {/* Subtle Sub-heading */}
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 mb-4">
-            Modern Web Experiences with Next.js
+            Mechanical Engineer designing high-performance systems.
           </p>
 
-          {/* Title: Building the Future */}
+          {/* Title: Engineering robust logic for the Web */}
           <h1 className="font-orbitron text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 leading-tight">
-            Building the <span className="text-neon">Future</span> <br />
-            one line at a time.
+            Engineering <span className="text-neon">robust logic</span> <br />
+            for the Web.
           </h1>
 
           {/* Description */}
           <p className="mt-6 font-normal text-base md:text-lg text-neutral-300 max-w-lg text-center mx-auto">
-            Hi! I&apos;m a Mechanical Engineer at DTU , Name : Satyam Yadav . I transform complex ideas into
-            seamless digital realities with a touch of <span className="text-neon">neon</span>.
+            Hi, I&apos;m Satyam. I bridge the gap between complex <span className="text-neon">engineering problems</span> and clean, interactive web interfaces using Next.js.
           </p>
 
           {/* 3. Resume Button with Glow Effect */}
           <div className="mt-10">
-            <a href="/resume.pdf" download="Satyam_Yadav_Resume.pdf" className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none group">
+            <a href="/resume.pdf" download="Satyam_Resume.pdf" target="_blank" rel="noopener noreferrer" className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none group">
               {/* Button Border Animation (Glow) */}
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00f0ff_0%,#393BB2_50%,#00f0ff_100%)]" />
 
@@ -60,6 +60,9 @@ export default function Home() {
       <TechStack />
       <Projects />
       <Contact />
+
+      {/* Back to Top Button */}
+      <BackToTop />
 
       {/* Grid Background (Optional but Recommended) */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-20 pointer-events-none">

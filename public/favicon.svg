@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#0a0a0a" rx="15"/>
+  
+  <!-- Neon Glow Effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Letter S in Neon Cyan -->
+  <text 
+    x="50" 
+    y="65" 
+    font-family="Arial, sans-serif" 
+    font-size="70" 
+    font-weight="bold" 
+    fill="#00f0ff" 
+    text-anchor="middle"
+    filter="url(#glow)"
+    letter-spacing="-2"
+  >
+    S
+  </text>
+</svg>
