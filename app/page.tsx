@@ -43,7 +43,7 @@ export default function Home() {
 
           {/* 3. Resume Button with Glow Effect */}
           <div className="mt-10">
-            <a href="/resume.pdf" download="Satyam_Resume.pdf" target="_blank" rel="noopener noreferrer" className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none group">
+            <a href="/resume.pdf" download="resume.pdf" target="_blank" rel="noopener noreferrer" className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none group">
               {/* Button Border Animation (Glow) */}
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00f0ff_0%,#393BB2_50%,#00f0ff_100%)]" />
 
