@@ -15,15 +15,15 @@ const orbitron = Orbitron({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.satyam.me"),
-  title: "Satyam Yadav | Full Stack Developer",
-  description: "Portfolio of a Mechanical Engineer building high-performance web apps.",
+  title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
+  description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Mechanical Engineer", "Web Development", "Portfolio"],
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Satyam Yadav | Full Stack Developer",
-    description: "Portfolio of a Mechanical Engineer building high-performance web apps.",
+    title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
+    description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
     url: "https://portfolio.satyam.me",
     locale: "en_US",
     type: "website",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Satyam Yadav | Full Stack Developer",
-    description: "Portfolio of a Mechanical Engineer building high-performance web apps.",
+    title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
+    description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
     images: ["/og-image.svg"],
   },
 };

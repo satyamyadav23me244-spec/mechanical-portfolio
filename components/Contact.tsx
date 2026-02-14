@@ -91,7 +91,7 @@ export const Contact = () => {
                         <footer className="text-neutral-400 text-sm space-y-2">
                             <p>Designed & Built by <span className="text-neon font-bold">Satyam Yadav</span></p>
                             <p className="text-xs text-neutral-600">
-                                © 2024-2025 Satyam Yadav. All rights reserved.
+                                © {new Date().getFullYear()} Satyam Yadav. All rights reserved.
                             </p>
                         </footer>
                     </div>
