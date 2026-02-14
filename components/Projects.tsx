@@ -7,34 +7,35 @@ import { MoveUpRight } from "lucide-react";
 const projects = [
     {
         title: "Personal Portfolio v2",
-        description: "A high-performance portfolio built with Next.js 14, Tailwind CSS, and Framer Motion. Features a futuristic neon theme and bento-grid layout.",
-        technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+        description: "My high-performance portfolio built with Next.js, Tailwind, and Framer Motion.",
+        technologies: ["Next.js", "React", "Tailwind CSS"],
         date: "Built in Feb 2025",
-        liveLink: "https://mechanical-portfolio-demo.vercel.app",
+        liveLink: "https://portfolio.satyam.me",
         codeLink: "https://github.com/satyamyadav23me244-spec/mechanical-portfolio",
         className: "col-span-1 md:col-span-2",
     },
     {
-        title: "Todo App with Local Storage",
-        description: "A sleek task management application with real-time updates, local storage persistence, and beautiful UI animations.",
-        technologies: ["React", "JavaScript", "Tailwind CSS"],
-        date: "Built in Jan 2024",
-        codeLink: "https://github.com/satyamyadav23me244-spec",
-        className: "col-span-1",
-    },
-    {
         title: "Weather Dashboard",
-        description: "Real-time weather app fetching data from OpenWeather API. Shows current conditions, forecasts, and interactive maps.",
-        technologies: ["React", "API", "CSS"],
+        description: "Real-time weather tracking using OpenWeather API and Axios.",
+        technologies: ["React", "API Integration", "Axios"],
         date: "Built in Dec 2023",
         codeLink: "https://github.com/satyamyadav23me244-spec",
         className: "col-span-1",
     },
     {
-        title: "E-commerce Product Filter",
-        description: "Interactive product filtering system with dynamic search, price range, and category filters. Fully responsive design.",
-        technologies: ["React", "JavaScript", "Tailwind CSS"],
-        date: "Built in Nov 2023",
+        title: "Unit Converter",
+        description: "Engineering unit converter for temperature, pressure, and flow calculations. Built for mechanical engineering applications.",
+        technologies: ["JavaScript Logic", "React State", "Math"],
+        date: "Work in Progress",
+        codeLink: "https://github.com/satyamyadav23me244-spec",
+        className: "col-span-1",
+        badge: "Work in Progress",
+    },
+    {
+        title: "Todo App with Local Storage",
+        description: "Task management application with real-time updates, local storage persistence, and smooth UI animations.",
+        technologies: ["React", "JavaScript", "Local Storage"],
+        date: "Built in Jan 2024",
         codeLink: "https://github.com/satyamyadav23me244-spec",
         className: "col-span-1 md:col-span-2",
     },
@@ -61,9 +62,16 @@ export const Projects = () => {
 
                         {/* Content */}
                         <div className="z-10">
-                            <h3 className="text-2xl font-orbitron font-bold mb-2 text-white group-hover:text-neon transition-colors">
-                                {project.title}
-                            </h3>
+                            <div className="flex items-center gap-3 mb-2">
+                                <h3 className="text-2xl font-orbitron font-bold text-white group-hover:text-neon transition-colors">
+                                    {project.title}
+                                </h3>
+                                {project.badge && (
+                                    <span className="text-xs font-bold px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded border border-yellow-500/30">
+                                        {project.badge}
+                                    </span>
+                                )}
+                            </div>
                             <p className="text-neutral-400 text-sm leading-relaxed mb-4">
                                 {project.description}
                             </p>
