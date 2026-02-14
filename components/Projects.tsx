@@ -10,7 +10,7 @@ const projects = [
         description: "My high-performance portfolio built with Next.js, Tailwind, and Framer Motion.",
         technologies: ["Next.js", "React", "Tailwind CSS"],
         date: "Built in Feb 2025",
-        liveLink: "https://satyamdtu.tech",
+        liveLink: "https://satyamyadav23me244-spec.github.io/mechanical-portfolio/",
         codeLink: "https://github.com/satyamyadav23me244-spec/mechanical-portfolio",
         className: "col-span-1 md:col-span-2",
     },

@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   },
   // We need this because your site is at /mechanical-portfolio
   basePath: "/mechanical-portfolio",
+  assetPrefix: "/mechanical-portfolio/",
 };
 
 export default nextConfig;
