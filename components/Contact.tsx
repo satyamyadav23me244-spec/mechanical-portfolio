@@ -7,10 +7,23 @@ export const Contact = () => {
     const [copied, setCopied] = useState(false);
     const email = "satyam991174@gmail.com";
 
-    const handleEmailCopy = () => {
-        navigator.clipboard.writeText(email);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+    const handleEmailCopy = async () => {
+        try {
+            await navigator.clipboard.writeText(email);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        } catch (err) {
+            console.error("Failed to copy email:", err);
+            // Fallback
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        }
     };
 
     return (
@@ -38,14 +51,15 @@ export const Contact = () => {
                         {/* Email Copy Section */}
                         <div className="mb-12">
                             <button
+                                type="button"
                                 onClick={handleEmailCopy}
-                                className="w-full flex items-center justify-center gap-2 px-4 sm:px-8 py-4 bg-neon/10 border border-neon text-neon font-bold font-orbitron rounded-lg hover:bg-neon/20 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 group text-sm sm:text-base"
+                                className="w-full flex items-center justify-center gap-2 px-4 sm:px-8 py-4 bg-neon/10 border border-neon text-neon font-bold font-orbitron rounded-lg hover:bg-neon/20 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 group text-sm sm:text-base cursor-pointer"
                             >
                                 <Mail size={20} className="flex-shrink-0" />
                                 {copied ? (
                                     <>
                                         <Check size={18} className="text-green-400 flex-shrink-0" />
-                                        <span>Email Copied!</span>
+                                        <span>Email Copied! ✓</span>
                                     </>
                                 ) : (
                                     <>
