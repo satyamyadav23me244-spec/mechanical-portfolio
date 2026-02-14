@@ -14,7 +14,7 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio.satyam.me"),
+  metadataBase: new URL("https://satyamdtu.tech"),
   title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
   description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Mechanical Engineer", "Web Development", "Portfolio"],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
     description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
-    url: "https://portfolio.satyam.me",
+    url: "https://satyamdtu.tech",
     locale: "en_US",
     type: "website",
     images: [
