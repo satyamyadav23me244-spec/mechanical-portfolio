@@ -39,7 +39,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Action Button - Resume */}
-          <a href="/resume.pdf" download="resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold font-orbitron hover:bg-neon hover:text-black transition-all">
+          <a href="/mechanical-portfolio/Satyam_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold font-orbitron hover:bg-neon hover:text-black transition-all">
             RESUME
           </a>
         </div>
@@ -77,7 +77,7 @@ export const Navbar = () => {
             Contact
           </Link>
           <div className="border-t border-neon/10 my-2" />
-          <a href="/resume.pdf" download="resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center px-4 py-3 bg-neon/10 border border-neon text-neon font-bold font-orbitron rounded-lg hover:bg-neon hover:text-black transition-all">
+          <a href="/mechanical-portfolio/Satyam_Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center px-4 py-3 bg-neon/10 border border-neon text-neon font-bold font-orbitron rounded-lg hover:bg-neon hover:text-black transition-all">
             DOWNLOAD RESUME
           </a>
         </div>
@@ -86,3 +86,4 @@ export const Navbar = () => {
   );
 
 };
+
