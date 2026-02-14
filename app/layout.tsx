@@ -14,7 +14,7 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mechanical-portfolio-demo.vercel.app"),
+  metadataBase: new URL("https://portfolio.satyam.me"),
   title: "Satyam Yadav | Full Stack Developer",
   description: "Portfolio of a Mechanical Engineer building high-performance web apps.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Mechanical Engineer", "Web Development", "Portfolio"],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Satyam Yadav | Full Stack Developer",
     description: "Portfolio of a Mechanical Engineer building high-performance web apps.",
-    url: "https://mechanical-portfolio-demo.vercel.app",
+    url: "https://portfolio.satyam.me",
     locale: "en_US",
     type: "website",
     images: [
