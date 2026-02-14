@@ -44,7 +44,10 @@ const config: Config = {
     },
   },
     plugins: [
-        function ({ matchUtilities, theme }: { matchUtilities: (arg0: Record<string, (value: string) => { backgroundImage: string }>, arg1: { values: Record<string, string>; type: string }) => void; theme: (arg0: string) => Record<string, string> }) {
+        function ({ matchUtilities, theme }: { 
+            matchUtilities: (utilities: Record<string, (value: string) => { backgroundImage: string }>, config: { values: Record<string, string>; type: string }) => void; 
+            theme: (key: string) => Record<string, string> 
+        }) {
             matchUtilities(
                 {
                     "bg-grid": (value: string) => ({
