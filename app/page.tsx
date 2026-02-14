@@ -18,7 +18,7 @@ export default function Home() {
 
         {/* Spotlight Effect - Background mein light beam */}
         <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
+          className="-top-20 left-0 md:left-60 md:-top-40"
           fill="white"
         />
 
