@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Orbitron } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-
-// 1. Inter (Normal Text ke liye)
-const inter = Inter({ subsets: ["latin"] });
-
-// 2. Orbitron (Headings/Tech look ke liye)
-const orbitron = Orbitron({ 
-  subsets: ["latin"], 
-  variable: "--font-orbitron", // Iska variable banaya taaki Tailwind mein use kar sakein
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://satyamdtu.tech"),
@@ -51,7 +40,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${orbitron.variable} bg-black antialiased`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      </head>
+      <body className="font-inter bg-black antialiased" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
         {children}
         <Analytics />
       </body>
