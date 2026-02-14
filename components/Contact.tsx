@@ -41,7 +41,7 @@ export const Contact = () => {
                         </h2>
 
                         <h3 className="text-4xl md:text-5xl font-bold font-orbitron mb-8 text-white">
-                            Let's <span className="text-neon">Connect</span>
+                            Let&apos;s <span className="text-neon">Connect</span>
                         </h3>
 
                         <p className="text-neutral-400 mb-12 text-lg leading-relaxed">

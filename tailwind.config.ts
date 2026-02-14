@@ -1,8 +1,6 @@
 import type { Config } from "tailwindcss";
-const svgToDataUri = require("mini-svg-data-uri");
-const {
-    default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import svgToDataUri from "mini-svg-data-uri";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
 const config: Config = {
     content: [
@@ -22,8 +20,9 @@ const config: Config = {
 
       // 2. Fonts (Jo humne pehle dale the)
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        orbitron: ["var(--font-orbitron)"], 
+        sans: ["Inter", "system-ui", "sans-serif"],
+        inter: ["Inter", "system-ui", "sans-serif"],
+        orbitron: ["Orbitron", "system-ui", "sans-serif"], 
       },
 
       // 3. Animations (Spotlight wali)
@@ -45,10 +44,13 @@ const config: Config = {
     },
   },
     plugins: [
-        function ({ matchUtilities, theme }: any) {
+        function ({ matchUtilities, theme }: { 
+            matchUtilities: (utilities: Record<string, (value: string) => { backgroundImage: string }>, config: { values: Record<string, string>; type: string }) => void; 
+            theme: (key: string) => Record<string, string> 
+        }) {
             matchUtilities(
                 {
-                    "bg-grid": (value: any) => ({
+                    "bg-grid": (value: string) => ({
                         backgroundImage: `url("${svgToDataUri(
                             `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
                         )}")`,

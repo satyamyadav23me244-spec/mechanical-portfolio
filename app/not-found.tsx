@@ -23,7 +23,7 @@ export default function NotFound() {
             Lost in <span className="text-neon">Space</span>?
           </h2>
           <p className="text-neutral-400 text-lg md:text-xl mb-8 max-w-lg mx-auto">
-            The page you're looking for has drifted into the void. Let's get you back on track!
+            The page you&apos;re looking for has drifted into the void. Let&apos;s get you back on track!
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function NotFound() {
         {/* Easter Egg Text */}
         <div className="mt-16 text-neutral-600 text-sm font-orbitron">
           <p className="mb-2">💻 Developer stuck? Check your URL!</p>
-          <p className="text-xs">Just kidding, we'll help you find your way back.</p>
+          <p className="text-xs">Just kidding, we&apos;ll help you find your way back.</p>
         </div>
       </div>
     </main>
