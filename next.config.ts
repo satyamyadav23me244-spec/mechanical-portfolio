@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // We need this because your site is at /mechanical-portfolio
-  basePath: "/mechanical-portfolio",
-  assetPrefix: "/mechanical-portfolio/",
 };
 
 export default nextConfig;
