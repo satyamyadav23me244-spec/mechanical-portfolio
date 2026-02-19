@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://satyamyadav23me244-spec.github.io/mechanical-portfolio/"),
+  metadataBase: new URL("https://satyamdtu.tech/"),
   title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
   description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Mechanical Engineer", "Web Development", "Portfolio"],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Satyam Yadav | Full Stack Developer & Mechanical Engineer",
     description: "Portfolio of Satyam Yadav - Building high-performance web apps with Next.js.",
-    url: "https://satyamyadav23me244-spec.github.io/mechanical-portfolio/",
+    url: "https://satyamdtu.tech/",
     locale: "en_US",
     type: "website",
     images: [
